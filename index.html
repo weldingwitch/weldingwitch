@@ -28,6 +28,19 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
   </head>
+  <style>
+    .testmonial_area {
+      opacity: 0.9;
+      background-image: image("https://i.ibb.co/JrX78L9/IMG-3125.jpg");
+    }
+    .welding-witch-text {
+      color: white;
+    }
+
+    .form-contact {
+      justify-content: center;
+    }
+  </style>
 
   <body>
     <!--[if lte IE 9]>
@@ -83,21 +96,29 @@
     </header>
     <!-- header-end -->
     <!-- testmonial_area_start -->
-    <div class="testmonial_area testimonial_bg overlay2">
+    <div
+      class="testmonial_area testimonial_bg overlay2"
+      style="background-color:white; color:black;"
+    >
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-12">
-            <div class="testmonial_active owl-carousel">
+            <div class="testmonial_active owl-carousel" alt="IMG-3125')">
               <div class="single_testmonial">
                 <div class="testmonial_info text-center">
-                  <div class="author_name">
-                    <h1>The Welding Witch</h1>
-                    <h3>
+                  <div>
+                    <h1 class="welding-witch-text">The Welding Witch</h1>
+                    <h3 class="welding-witch-text">
                       Proud to be a small, minority and women-owned business.
                     </h3>
                   </div>
                   <div class="author">
-                    <img src="img/testmonial/author.png" alt="" />
+                    <!-- <img
+                      src="https://i.ibb.co/NYg7HPh/icon.jpg"
+                      alt="icon"
+                      border="0"
+                      style="width:45%;height:43%; border-radius:49%;"
+                    /> -->
                   </div>
                   <p>
                     Mika Nava Muñoz is union trained in welding stick arc, tig
@@ -129,10 +150,16 @@
             <div class="single_dream text-center">
               <div class="thumb">
                 <img
+                  src="https://i.ibb.co/NYg7HPh/icon.jpg"
+                  style="width:200px;height:200px;border-radius:50%;"
+                  alt="icon"
+                  border="0"
+                />
+                <!-- <img
                   src="img/copper.jpg"
                   style="width:200px;height:200px;border-radius:50%;"
                   alt=""
-                />
+                /> -->
               </div>
               <h3>Materials</h3>
               <p>
@@ -191,8 +218,8 @@
         <div class="row">
           <div class="col-xl-12">
             <div class="section_title mb-60">
-              <span class="sub_heading">Project view</span>
-              <h3>Projects</h3>
+              <span class="sub_heading"> Gallery View</span>
+              <h3>Gallery</h3>
               <div class="seperator"></div>
             </div>
           </div>
@@ -200,50 +227,20 @@
         <div class="row align-items-center mb-80">
           <div class="col-xl-6 col-md-6">
             <div class="single_project_thumb">
-              <img src="img/project/1.png" alt="" />
+              <img
+                src="https://i.ibb.co/54g3ZDd/mar.jpg"
+                alt="mar"
+                border="0"
+              />
             </div>
           </div>
           <div class="col-xl-5 offset-xl-1 col-md-6">
             <div class="section_title">
-              <span class="sub_heading2">Photos from Mar</span>
-              <h4>Photos from Mar</h4>
+              <span class="sub_heading2">Art Installation for Mev Luna</span>
+              <h4>Art Installation for Mev Luna</h4>
               <p>
-                Consectetur adipiscing elit, sed do eiusmod tempor labore et
-                dolore magna aliqua quis ipsum suspendisse.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row align-items-center mb-80">
-          <div class="col-xl-6 col-md-6">
-            <div class="section_title">
-              <span class="sub_heading2">Cqqchifruit</span>
-              <h4>Cqqchifruit</h4>
-              <p>
-                Consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                labore et dolore magna aliqua quis ipsum suspendisse.
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-5 offset-xl-1 col-md-6">
-            <div class="single_project_thumb">
-              <img src="img/project/2.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row align-items-center mb-80">
-          <div class="col-xl-6 col-md-6">
-            <div class="single_project_thumb">
-              <img src="img/project/3.png" alt="" />
-            </div>
-          </div>
-          <div class="col-xl-5 offset-xl-1 col-md-6">
-            <div class="section_title">
-              <span class="sub_heading2">Alef</span>
-              <h4>Alef</h4>
-              <p>
-                Consectetur adipiscing elit, sed do eiusmod tempor labore et
-                dolore magna aliqua quis ipsum suspendisse.
+                In September of 2019, Welding Witch worked with the artist Mev
+                Luna for their installation at Expo Chicago Art Week.
               </p>
             </div>
           </div>
@@ -309,28 +306,30 @@
             <div class="section_title mb-20">
               <span class="sub_heading">Get In Touch</span>
             </div>
-            <form
-              class="message"
-              action="https://formspree.io/xleenakj"
-              method="POST"
-            >
-              <label>
-                Your email:
-              </label>
-              <input type="text" name="_replyto" />
-              <br />
-              <label>
-                Your message:
-              </label>
-              <input type="text" name="message" />
-              <br />
-              <label>
-                Your Phone Number:
-              </label>
-              <input type="text" name="number" />
-              <br />
-              <button class="button-btn" type="submit">CONTACT US</button>
-            </form>
+            <div class="form-contact">
+              <form
+                class="message"
+                action="https://formspree.io/xleenakj"
+                method="POST"
+              >
+                <label>
+                  Your email:
+                </label>
+                <input type="text" name="_replyto" />
+                <br />
+                <label>
+                  Your message:
+                </label>
+                <input type="text" name="message" />
+                <br />
+                <label>
+                  Your Phone Number:
+                </label>
+                <input type="text" name="number" />
+                <br />
+                <button class="button-btn" type="submit">CONTACT US</button>
+              </form>
+            </div>
             <!-- <form action="#" class="messege">
               <input type="name" placeholder="Your Name" />
               <input type="email" placeholder="Your Email" />
